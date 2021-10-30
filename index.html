@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="Chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookWareMbtiTest</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body background="배경1.png">
+    <!-- 비디오 화면 -->
+
+    <main>
+      <!-- <video src="BG2.mp4 " autoplay="autoplay" loop type="video/mp4"></video> -->
+      <!-- 시작 페이지 -->
+      <article class="start" style="display: ''">
+        <div class="start__big-title font-one">성격으로 알아보는</div>
+        <div class="start__small-title font-one">Cook MBTI</div>
+        <img class="start__img" src="계량컵.png" alt="everyone" />
+        <button class="start__test-button font-one" type="button ">
+          테스트 하러가기!!
+        </button>
+      </article>
+
+      <!-- 주의사항 페이지 -->
+      <article class="read" style="display: none">
+        <h2 class="read__text1 font-one">※ 주의사항 ※</h2>
+        <p style="line-height: 1.3" class="read__text2 font-one">
+          본 테스트는 간단하게 제작하였으며,<br />
+          재미로만 참여해주시기 바랍니다
+        </p>
+        <button class="read__button font-one">OK!</button>
+      </article>
+
+      <!-- 질문 페이지 -->
+      <article class="question" style="display: none">
+        <input class="question__type" type="hidden" value="EI" />
+        <!-- 문제 현황 -->
+        <div class="question__number font-number">1/12</div>
+
+        <!-- 문제 성향 알아보는 부분 -->
+        <div class="question__title font-one">Question Title</div>
+        <button
+          style="line-height: 1.3"
+          class="question__A question-button font-one"
+          type="button"
+        >
+          답변
+        </button>
+        <button
+          style="line-height: 1.3"
+          class="question__B question-button font-one"
+          type="button"
+        >
+          답변
+        </button>
+      </article>
+
+      <!-- mbti 판단하는 부분 -->
+      <input type="hidden" class="EI" value="0" />
+      <input type="hidden" class="SN" value="0" />
+      <input type="hidden" class="TF" value="0" />
+      <input type="hidden" class="JP" value="0" />
+
+      <article class="result" style="display: none">
+        <div class="result__character-prename font-one">앞부분</div>
+        <div class="result__character-name font-one">조리도구이름</div>
+        <img
+          class="result__character-img font-one box-one"
+          src=""
+          alt="person"
+        />
+        <div class="result__character-explain font-one">★ 성격 특징 ★</div>
+        <section class="result__explains font-one box-one"></section>
+        <div class="result__line"></div>
+        <div class="result__friend">
+          <div class="result__best box-one">
+            <div class="result__text font-one">같이 쓰면 좋음</div>
+            <img
+              class="result__best-img"
+              src="가위.png"
+              alt=""
+              width="120px"
+              height="120px%"
+            />
+            <div class="result__best-name font-one">이름</div>
+          </div>
+          <div class="result__worst box-one">
+            <div class="result__text font-one">같이 쓰면 별로</div>
+            <img
+              class="result__worst-img"
+              src="계량컵2.png"
+              alt=""
+              width="120px"
+              height="120px"
+            />
+            <div class="result__worst-name font-one">이름</div>
+          </div>
+        </div>
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis addthis_inline_share_toolbox_s4sb"></div>
+        <footer style="line-height: 1.3" class="font-footer">
+          전종훈 | minn4072@gmail.com
+        </footer>
+      </article>
+    </main>
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script
+      type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-614bd27334882d83"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
