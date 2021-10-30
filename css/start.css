@@ -1,0 +1,24 @@
+.start {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start__big-title {
+  font-size: 20px;
+}
+
+.start__small-title {
+  margin-top: 10px;
+  font-size: 35px;
+}
+.start__img {
+  width: 80%;
+}
+
+.start__test-button {
+  border: 3px solid #696964;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
