@@ -1,0 +1,19 @@
+.font-one {
+  font-family: "HSYuji-Regular";
+  color: #696964;
+}
+
+.font-footer {
+  font-family: "HSYuji-Regular";
+  color: #999999;
+}
+
+.font-number {
+  font-family: "HSYuji-Regular";
+  color: #929292;
+}
+.box-one {
+  border: 2px solid #c0c0c0;
+  background-color: #f1f1f1;
+  border-radius: 5%;
+}
