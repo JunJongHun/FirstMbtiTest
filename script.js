@@ -71,7 +71,7 @@ function showResult() {
   //이미지
   result
     .querySelector(".result__character-img")
-    .setAttribute("src", icon[mbti]["img"]);
+    .setAttribute("src", "images/" + icon[mbti]["img"]);
   //이름 앞에 내용
   result.querySelector(".result__character-prename").innerHTML =
     icon[mbti]["pre"];
@@ -87,10 +87,10 @@ function showResult() {
   //최고/최악 조합 그림
   result
     .querySelector(".result__best-img")
-    .setAttribute("src", icon[mbti]["best"] + ".png");
+    .setAttribute("src", "images/" + icon[mbti]["best"] + ".png");
   result
     .querySelector(".result__worst-img")
-    .setAttribute("src", icon[mbti]["worst"] + ".png");
+    .setAttribute("src", "images/" + icon[mbti]["worst"] + ".png");
   // mbti 성격 나열( li 생성 )
   addExplains(mbti);
   //공유버튼 나타내기
@@ -116,6 +116,10 @@ function next() {
   //문제 번호
   questionPage.querySelector(".question__number").innerHTML =
     "[ " + number + "/12 ]";
+  //문제 진행도 상황(progress)
+  // questionPage
+  //   .querySelector(".question__progress")
+  //   .setAttribute("value", eval((number / 12) * 100));
   //문제 타입 설정부분
   questionPage
     .querySelector(".question__type")
