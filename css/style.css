@@ -6,7 +6,7 @@
 @import url("video.css");
 @import url("font.css");
 @import url("read.css");
-
+@import url("loading.css");
 body {
   height: 100vh;
   /* border: 2px solid; */
