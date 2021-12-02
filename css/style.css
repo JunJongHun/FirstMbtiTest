@@ -51,3 +51,22 @@ footer {
   font-weight: normal;
   font-style: normal;
 }
+
+@media (max-width: 601px) {
+  .desktopview {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    display: none;
+  }
+  .desktopview {
+    visibility: visible;
+    font-size: 50px;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+  }
+}
