@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="Chrome" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
     <title>CookWareMbtiTest</title>
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      video {
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+      }
+    </style>
   </head>
-  <body background="images/배경_1.png">
-    <!-- 비디오 화면 -->
-
-    <div class="font-one desktopview">핸드폰으로 접속 해주시길 바랍니다</div>
-
+  <body>
+    <video src="/images/BG_2.mp4" playsinline muted autoplay loop></video>
     <main>
-      <!-- <video src="BG2.mp4 " autoplay="autoplay" loop type="video/mp4"></video> -->
+      <!-- <video src="BG_1.mp4 " autoplay="autoplay" loop type="video/mp4"></video> -->
       <!-- 시작 페이지 -->
       <article class="start" style="display: ''">
         <div class="start__big-title font-one">성격으로 알아보는</div>
@@ -69,10 +75,9 @@
       <input type="hidden" class="JP" value="0" />
 
       <!-- 로딩화면 -->
-      <div class="loading" style="display: none"">
-
+      <div class="loading" style="display: none">
         <div class="loading__title font-one">분석중...</div>
-        <img class="loading__gif" src="images/loading.gif" alt="" srcset="" />
+        <img class="loading__gif" src="images/loading.gif" />
       </div>
 
       <!-- 결과 화면 -->
@@ -84,12 +89,17 @@
           src=""
           alt="person"
         />
+        <div class="result__line"></div>
         <div class="result__character-explain font-one">★ 성격 특징 ★</div>
         <section class="result__explains font-one box-one"></section>
         <div class="result__line"></div>
+        <div class="result__combi font-one">
+          <div class="result__combi-title">★ 조리도구 궁합 ★</div>
+        </div>
+
         <div class="result__friend">
           <div class="result__best box-one">
-            <div class="result__text font-one">같이 쓰면 좋음</div>
+            <div class="result__text font-one"><u>같이 쓰면 좋음</u></div>
             <img
               class="result__best-img"
               src="가위.png"
@@ -100,7 +110,7 @@
             <div class="result__best-name font-one">이름</div>
           </div>
           <div class="result__worst box-one">
-            <div class="result__text font-one">같이 쓰면 별로</div>
+            <div class="result__text font-one"><u>같이 쓰면 별로</u></div>
             <img
               class="result__worst-img"
               src="계량컵2.png"
@@ -111,7 +121,8 @@
             <div class="result__worst-name font-one">이름</div>
           </div>
         </div>
-
+        <div class="result__line"></div>
+        <div class="result__share font-one">★ 공유하기 ★</div>
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <div class="addthis addthis_inline_share_toolbox_s4sb"></div>
         <footer style="line-height: 1.3" class="font-footer">
@@ -130,8 +141,19 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script> -->
+    <ins
+      class="kakao_ddn_area"
+      style="display: none; width: 100%"
+      data-ad-unit="DAN-LgZHUGjooDYmkvWr"
+      data-ad-width="320"
+      data-ad-height="50"
+    ></ins>
+    <script
+      async
+      type="text/javascript"
+      src="//t1.daumcdn.net/kas/static/ba.min.js"
+    ></script>
 
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script
       type="text/javascript"
       src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-614bd27334882d83"
