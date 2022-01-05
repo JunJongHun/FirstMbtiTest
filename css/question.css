@@ -3,13 +3,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .question__title {
   margin-top: 100px;
 
-  padding-bottom: 10px;
-  text-align: center;
+  height: 60px;
+  margin-bottom: 10px;
+  line-height: 25px;
   font-size: 20px;
 }
 
@@ -19,9 +21,9 @@
   margin-top: 15px;
   border: 2px solid;
   border-radius: 15px;
-  padding: 10px 15px;
+  padding: 20px 15px;
   background-color: #e6e4e4;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .question__number {
