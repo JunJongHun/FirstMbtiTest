@@ -9,11 +9,17 @@
 @import url("loading.css");
 body {
   height: 100vh;
+  overflow: inherit;
+  /* letter-spacing: 0px; */
+
   /* border: 2px solid; */
 }
 
 main {
-  height: 100%;
+  margin: 0 auto;
+  width: 340px;
+  height: 100vh;
+  overflow: auto;
   /* border: 2px solid; */
 }
 
@@ -30,13 +36,6 @@ footer {
   padding-right: 8px;
 }
 
-/* video {
-  border: 2px solid aqua;
-  width: 100%;
-  position: absolute;
-  object-fit: fill;
-} */
-
 @font-face {
   font-family: "HSYuji-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff")
@@ -51,22 +50,18 @@ footer {
   font-weight: normal;
   font-style: normal;
 }
-
-@media (max-width: 601px) {
-  .desktopview {
-    visibility: hidden;
+@font-face {
+  font-family: "cafe";
+  src: url("../font/Cafe24Dongdong.ttf") format("truetype");
+}
+@media (max-width: 501px) {
+  main {
+    width: 340px;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 501px) {
   main {
-    display: none;
-  }
-  .desktopview {
-    visibility: visible;
-    font-size: 50px;
-    position: fixed;
-    top: 100px;
-    left: 100px;
+    width: 500px;
   }
 }
