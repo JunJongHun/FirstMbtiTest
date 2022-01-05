@@ -1,5 +1,5 @@
 .start {
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,5 +20,6 @@
 .start__test-button {
   border: 3px solid #696964;
   border-radius: 15px;
-  padding: 10px 20px;
+  padding: 15px 25px;
+  font-size: larger;
 }
