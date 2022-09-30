@@ -1,3 +1,1 @@
-# FristMbitTest
-
-html & css good job!
+https://cookwarembti.netlify.app/
