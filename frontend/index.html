@@ -7,8 +7,8 @@
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
     <title>CookWareMbtiTest</title>
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <style>
       video {
         z-index: -1;
@@ -20,14 +20,14 @@
     </style>
   </head>
   <body>
-    <video src="/images/BG_2.mp4" playsinline muted autoplay loop></video>
+    <video src="./images/BG_2.mp4" playsinline muted autoplay loop></video>
     <main>
       <!-- <video src="BG_1.mp4 " autoplay="autoplay" loop type="video/mp4"></video> -->
       <!-- 시작 페이지 -->
       <article class="start" style="display: ''">
         <div class="start__big-title font-one">성격으로 알아보는</div>
         <div class="start__small-title font-one">Cook MBTI</div>
-        <img class="start__img" src="images/레시피.png" alt="everyone" />
+        <img class="start__img" src="./images/레시피.png" alt="everyone" />
         <button class="start__test-button font-one" type="button ">
           테스트 하러가기!!
         </button>
@@ -77,7 +77,7 @@
       <!-- 로딩화면 -->
       <div class="loading" style="display: none">
         <div class="loading__title font-one">분석중...</div>
-        <img class="loading__gif" src="images/loading.gif" />
+        <img class="loading__gif" src="./images/loading.gif" />
       </div>
 
       <!-- 결과 화면 -->
@@ -102,10 +102,10 @@
             <div class="result__text font-one"><u>같이 쓰면 좋음</u></div>
             <img
               class="result__best-img"
-              src="가위.png"
+              src="./images/거품기.png"
               alt=""
               width="120px"
-              height="120px%"
+              height="120px"
             />
             <div class="result__best-name font-one">이름</div>
           </div>
@@ -113,7 +113,7 @@
             <div class="result__text font-one"><u>같이 쓰면 별로</u></div>
             <img
               class="result__worst-img"
-              src="계량컵2.png"
+              src="./images/가위.png"
               alt=""
               width="120px"
               height="120px"
@@ -159,6 +159,6 @@
       src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-614bd27334882d83"
     ></script>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
