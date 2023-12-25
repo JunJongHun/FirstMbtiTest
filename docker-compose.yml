@@ -1,0 +1,22 @@
+version: '3'
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./backend # 백엔드 소스 코드가 있는 디렉토리의 경로로 수정
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+    volumes:
+      - frontend_build:/app/frontend
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend # 프론트엔드 소스 코드가 있는 디렉토리의 경로로 수정
+      dockerfile: Dockerfile
+    volumes:
+      - frontend_build:/front
+
+volumes:
+  frontend_build: null # 프론트엔드 빌드 결과물을 저장할 볼륨

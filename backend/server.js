@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const port = 80;
 
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, './frontend')));
 
 app.get('/*', (req, res) => {
   res.set({
@@ -13,7 +13,7 @@ app.get('/*', (req, res) => {
     Pragma: 'no-cache',
     Date: Date.now(),
   });
-  res.sendFile(path.join(__dirname, '../frontend', 'index.html'));
+  res.sendFile(path.join(__dirname, './frontend', 'index.html'));
 });
 
 http.createServer(app).listen(port, () => {
