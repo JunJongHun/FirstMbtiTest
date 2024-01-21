@@ -22,4 +22,12 @@
   border-radius: 15px;
   padding: 15px 25px;
   font-size: larger;
+  transition: all 0.2s ease-in-out;
+}
+
+.start__test-button:hover {
+  background-color: #696964;
+  color: white;
+  transform: scale(1.02);
+  cursor: pointer;
 }

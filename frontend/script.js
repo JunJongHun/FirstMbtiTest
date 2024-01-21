@@ -87,10 +87,10 @@ function showResult() {
   //최고/최악 조합 그림
   result
     .querySelector('.result__best-img')
-    .setAttribute('src', './images/' + icon[mbti]['best'] + '.png');
+    .setAttribute('src', 'images/' + icon[mbti]['best'] + '.png');
   result
     .querySelector('.result__worst-img')
-    .setAttribute('src', './images/' + icon[mbti]['worst'] + '.png');
+    .setAttribute('src', 'images/' + icon[mbti]['worst'] + '.png');
   // mbti 성격 나열( li 생성 )
   addExplains(mbti);
   //공유버튼 나타내기
@@ -365,7 +365,7 @@ let icon = {
     pre: '잡생각이 많은',
     character: '주전자',
     img: '주전자.png',
-    best: 'ENTP',
+    best: '뒤집개',
     worst: '젓가락',
     personality: [
       '조용한 편임',
@@ -390,7 +390,7 @@ let icon = {
     character: '그릇',
     explain: '이상적이며 따뜻한 감성을 축적하고자 하는 사람들',
     img: '그릇.png',
-    best: 'ENTJ',
+    best: '뒤집개',
     worst: '집게',
     personality: [
       '완벽하지 못하면 시작도 못하는 편',
@@ -414,8 +414,8 @@ let icon = {
     pre: '관계 정리는 칼 같이',
     character: '식칼',
     img: '식칼.png',
-    best: 'ENFP',
-    worst: '없음',
+    best: '뒤집개',
+    worst: '전자레인지',
     personality: [
       '친해질 때 한 세월, 관계 정리는 하루',
       '은근 허당',
@@ -445,8 +445,8 @@ let icon = {
     pre: '아직 꺼내면 안돼!',
     character: '전자레인지',
     img: '전자레인지.png',
-    best: 'ENTJ',
-    worst: '없음',
+    best: '뒤집개',
+    worst: '숟가락',
     personality: [
       '질문 다시 못하는 편',
       '대화하다 딴생각 자주 함',
@@ -496,7 +496,7 @@ let icon = {
     character: '가위',
     explain: '완전한 질서체제 안에서 새롭게 모험하고자 하는 사람들',
     img: '가위.png',
-    best: 'ISTP',
+    best: '뒤집개',
     worst: '레시피',
     personality: [
       '고집이 세고 현실적인 편',
@@ -545,8 +545,8 @@ let icon = {
     pre: '나만 따라와',
     character: '레시피',
     img: '레시피.png',
-    best: 'ISFP',
-    worst: 'ESFJ',
+    best: '뒤집개',
+    worst: '장갑',
     personality: [
       '쓸데없는 걱정 많이 함',
       '사회생활 마스터',
@@ -570,8 +570,8 @@ let icon = {
     pre: '혼자보단 둘이 좋지!',
     character: '젓가락',
     img: '젓가락.png',
-    best: 'INFJ',
-    worst: 'ESFJ',
+    best: '장갑',
+    worst: '뒤집개',
     personality: [
       '인싸중에 인싸',
       '생각이 너무 많음',
@@ -616,11 +616,12 @@ let icon = {
   },
   ENTP: {
     type: 'ENTP',
-    pre: '@@',
-    character: '@@',
-    img: '@@.png',
-    best: 'INFJ',
-    worst: '없음',
+    pre: '내가 바로 인싸',
+    character: '숟가락',
+    explain: '소중한 사람들과 함께 삶을 즐기고자 하는 사람들',
+    img: '숟가락.png',
+    best: '장갑',
+    worst: '뒤집개',
     personality: [
       '머리가 좋으며 사람 파악 잘함',
       '싸워도 금방 해결하는 편',
@@ -647,11 +648,12 @@ let icon = {
   },
   ENTJ: {
     type: 'ENTJ',
-    pre: '@@',
-    character: '@@',
-    img: '@@.png',
-    best: 'INTP',
-    worst: '없음',
+    pre: '내가 바로 인싸',
+    character: '숟가락',
+    explain: '소중한 사람들과 함께 삶을 즐기고자 하는 사람들',
+    img: '숟가락.png',
+    best: '장갑',
+    worst: '뒤집개',
     personality: [
       '일 잘한다고 해주면 더 열심히 하려 함',
       '집중하는 나의 모습 Like It',

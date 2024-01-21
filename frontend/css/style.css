@@ -1,12 +1,12 @@
-@import url("start.css");
-@import url("question.css");
-@import url("addthis.css");
-@import url("result.css");
-@import url("jb-box.css");
-@import url("video.css");
-@import url("font.css");
-@import url("read.css");
-@import url("loading.css");
+@import url('start.css');
+@import url('question.css');
+@import url('addthis.css');
+@import url('result.css');
+@import url('jb-box.css');
+@import url('video.css');
+@import url('font.css');
+@import url('read.css');
+@import url('loading.css');
 body {
   height: 100vh;
   overflow: inherit;
@@ -16,11 +16,16 @@ body {
 }
 
 main {
+  -ms-overflow-style: none;
   margin: 0 auto;
   width: 340px;
   height: 100vh;
   overflow: auto;
   /* border: 2px solid; */
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
 
 li {
@@ -31,28 +36,28 @@ li {
 footer {
   text-align: center;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 12px;
   padding-right: 8px;
 }
 
 @font-face {
-  font-family: "HSYuji-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff")
-    format("woff");
+  font-family: 'HSYuji-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "CookieRun-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
-    format("woff");
+  font-family: 'CookieRun-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "cafe";
-  src: url("../font/Cafe24Dongdong.ttf") format("truetype");
+  font-family: 'cafe';
+  src: url('../font/Cafe24Dongdong.ttf') format('truetype');
 }
 @media (max-width: 501px) {
   main {
