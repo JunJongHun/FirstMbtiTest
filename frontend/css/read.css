@@ -15,4 +15,11 @@
   border: 3px solid #696964;
   border-radius: 15px;
   padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.read__button:hover {
+  background-color: #696964;
+  color: white;
+  cursor: pointer;
 }
